@@ -71,6 +71,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Popularne frameworki JavaScript
 
+React to biblioteka JavaScript stworzona przez Facebooka (obecnie Meta), służąca do budowania interfejsów użytkownika, a konkretnie dynamicznych, interaktywnych komponentów w aplikacjach internetowych. Jest często używany do tworzenia aplikacji jednostronicowych (SPA), gdzie większość interakcji odbywa się na jednej stronie, a nowe treści są ładowane dynamicznie, bez przeładowania całej strony.
+
+## Podstawowe cechy Reacta
+
+1. Komponenty
+
+
+
+
+
+
+
+
+
+
+
 
 
 
