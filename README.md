@@ -102,7 +102,67 @@ React jest często używany razem z innymi bibliotekami i narzędziami, które t
 - Next.js: Framework do budowania aplikacji React z funkcjonalnościami takimi jak rendering po stronie serwera i generowanie statycznych stron.
 - Create React App: Narzędzie do szybkiego tworzenia nowej aplikacji React z minimalną konfiguracją.
 
+## Narzędzia użyte w projekcie:
 
+MUI - to popularna biblioteka komponentów do React, która implementuje zasady projektowania Material Design opracowane przez Google. MUI ułatwia tworzenie nowoczesnych, responsywnych i estetycznych interfejsów użytkownika, oferując szeroki zestaw gotowych komponentów, które można łatwo dostosować do własnych potrzeb.
+
+### Główne cechy MUI:
+
+1. Implementacja Material Design:
+   - MUI dostarcza zestaw komponentów zgodnych ze standardami Material Design, co pozwala na tworzenie spójnych i estetycznych interfejsów użytkownika.
+   - Komponenty te obejmują przyciski, pola tekstowe, dialogi, menu, nawigację i wiele innych.
+  
+2. Responsywność:
+   - MUI zawiera system siatki (Grid System) oraz inne narzędzia ułatwiające tworzenie responsywnych układów, które dobrze wyglądają na różnych urządzeniach i rozdzielczościach.
+  
+3. Dostosowywanie i stylizacja:
+   - MUI oferuje rozbudowane możliwości dostosowywania, dzięki którym można modyfikować wygląd komponentów za pomocą różnych technik, takich jak API do stylizacji (styled-components, @emotion), motywy (themes) oraz makeStyles i withStyles.
+   - Możliwość tworzenia własnych tematów (themes) pozwala na globalne zarządzanie kolorami, typografią i innymi aspektami wyglądu aplikacji.
+  
+4. Obszerna dokumentacja i społeczność:
+   - MUI posiada obszerną dokumentację, która zawiera przykłady użycia komponentów, poradniki i API reference.
+   - Aktywna społeczność użytkowników oraz regularne aktualizacje zapewniają, że MUI jest stale rozwijane i wspierane.
+  
+### Podstawowe komponenty MUI
+
+MUI oferuje szeroki zestaw komponentów, które można łatwo zaimportować i użyć w aplikacji React. Oto kilka przykładów:
+- Button: Komponent przycisku, który można łatwo dostosować.
+- TextField: Komponent pola tekstowego z obsługą walidacji.
+- AppBar: Komponent paska aplikacji, często używany do nawigacji.
+- Drawer: Komponent szuflady nawigacyjnej.
+- Card: Komponent karty, który można używać do wyświetlania zgrupowanych informacji.
+
+## React Hooks
+
+React Hooks to funkcje, które pozwalają korzystać z funkcji React, takich jak stan i cykl życia komponentu, w komponentach funkcyjnych. Wcześniej te funkcje były dostępne tylko w komponentach klasowych, ale od wersji React 16.8 są dostępne również w komponentach funkcyjnych dzięki Hooks.
+
+### Najważniejsze Hooks
+
+1. useState - Służy do dodawania stanu lokalnego do komponentu funkcyjnego. Zwraca parę: bieżący stan i funkcję do jego aktualizacji.
+2. useEffect - Służy do zarządzania efektami ubocznymi w komponentach, takich jak pobieranie danych, subskrypcje czy ręczne manipulacje DOM. Działa podobnie do metod cyklu życia komponentów klasowych componentDidMount, componentDidUpdate i componentWillUnmount.
+3. useContext - Służy do korzystania z kontekstu (context) w komponentach funkcyjnych. Pozwala na dostęp do wartości kontekstu bez konieczności korzystania z komponentu wyższego rzędu (HOC).
+4. useReducer - Alternatywa dla useState, idealna do zarządzania bardziej złożonym stanem w komponentach. Działa podobnie do reduktora w Redux.
+5. useRef - Służy do tworzenia referencji do elementów DOM lub do przechowywania wartości, która nie wymusza ponownego renderowania komponentu.
+
+### Przechowywanie stanu aplikacji
+
+Zarządzanie stanem jest kluczowym aspektem budowania dynamicznych aplikacji. React oferuje kilka sposobów przechowywania i zarządzania stanem:
+
+1. Stan lokalny (useState):
+   - Przechowuje stan lokalny w pojedynczym komponencie.
+   - Jest idealny do prostych przypadków użycia, gdzie stan nie musi być współdzielony między komponentami.
+  
+2. Stan globalny (Context API):
+   - Pozwala na tworzenie globalnych stanów, które mogą być dostępne dla dowolnego komponentu w drzewie komponentów.
+   - Idealny do przekazywania danych na różnych poziomach hierarchii komponentów bez konieczności przekazywania propsów.
+
+3. Zaawansowane zarządzanie stanem (useReducer):
+   - Używane do bardziej złożonych przypadków, gdzie stan ma wiele wartości lub gdy wymagane jest bardziej złożone zarządzanie logiką stanu.
+   - Można go porównać do reduktora w Redux.
+
+4. Zewnętrzne biblioteki (Redux, MobX, Recoil):
+   - W przypadku bardzo dużych aplikacji, gdzie zarządzanie stanem jest kluczowe, można użyć zewnętrznych bibliotek takich jak Redux, MobX czy Recoil.
+   - Te biblioteki oferują zaawansowane narzędzia do zarządzania stanem, middleware, synchronizację stanu z lokalnym magazynem itp.
 
 
 
