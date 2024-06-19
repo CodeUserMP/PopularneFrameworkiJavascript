@@ -75,7 +75,43 @@ React to biblioteka JavaScript stworzona przez Facebooka (obecnie Meta), służ�
 
 ## Podstawowe cechy Reacta
 
-1. Komponenty
+1. Komponenty:
+     - React wprowadza koncept komponentów, które są podstawowymi blokami budowy aplikacji. Komponenty mogą być  funkcjonalne (oparte na funkcjach) lub klasowe (oparte na klasach ES6).
+     - Każdy komponent może mieć swój własny stan (state) i może przyjmować dane wejściowe w postaci propsów (properties).
+  
+2. JSX (JavaScript XML):
+     - JSX to składnia pozwalająca na pisanie elementów HTML wewnątrz kodu JavaScript. Jest to wygodne rozwiązanie, które sprawia, że kod jest bardziej czytelny i zrozumiały.
+     - JSX jest następnie transpilowany do zwykłego kodu JavaScript przy użyciu narzędzi takich jak Babel.
+  
+3. Virtual DOM:
+     - React korzysta z wirtualnego DOM (Virtual DOM) do efektywnego zarządzania zmianami w interfejsie użytkownika. Zamiast bezpośrednio manipulować rzeczywistym DOM, React najpierw tworzy jego wirtualną kopię.
+     - Kiedy stan aplikacji się zmienia, React aktualizuje Virtual DOM, a następnie oblicza minimalny zestaw zmian, które trzeba wprowadzić do rzeczywistego DOM, aby zsynchronizować go z Virtual DOM. Ta optymalizacja sprawia, że operacje na DOM są szybsze i bardziej wydajne.
+
+4. Jednokierunkowy przepływ danych (One-way Data Binding):
+     - W React dane przepływają w jednym kierunku, z komponentu nadrzędnego do podrzędnego za pomocą propsów. Ułatwia to śledzenie, skąd pochodzą dane i jak są używane, co jest pomocne w debugowaniu i utrzymaniu kodu.
+
+5. Stan (State) i Życie Komponentu:
+     - Każdy komponent może mieć swój wewnętrzny stan, który przechowuje informacje o bieżącym stanie komponentu. Kiedy stan się zmienia, komponent automatycznie renderuje się ponownie, aby odzwierciedlić te zmiany.
+     - Komponenty mają również cykl życia, który obejmuje fazy takie jak montowanie, aktualizowanie i odmontowywanie, co pozwala na wykonywanie określonych operacji w odpowiednich momentach.
+
+## Ekosystem Reacta
+
+React jest często używany razem z innymi bibliotekami i narzędziami, które tworzą cały ekosystem wspierający budowę złożonych aplikacji:
+- Redux lub Context API: Biblioteki do zarządzania stanem globalnym w aplikacji.
+- React Router: Biblioteka do zarządzania routingiem w aplikacjach jednostronicowych.
+- Next.js: Framework do budowania aplikacji React z funkcjonalnościami takimi jak rendering po stronie serwera i generowanie statycznych stron.
+- Create React App: Narzędzie do szybkiego tworzenia nowej aplikacji React z minimalną konfiguracją.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
